@@ -3,66 +3,218 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Google Ads</title>
+<title>Google Ads Pro</title>
 
 <style>
-body{margin:0;font-family:Arial}
-header{background:#2563eb;color:#fff;padding:15px;display:flex;justify-content:space-between}
-.hero{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;text-align:center;padding:80px}
-.btn{background:#10b981;color:#fff;padding:12px 25px;text-decoration:none;border-radius:6px}
-section{padding:40px;max-width:1000px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.1)}
-form{max-width:400px;margin:auto}
-input,textarea{width:100%;padding:10px;margin:10px 0}
-button{background:#10b981;color:#fff;padding:12px;border:none;width:100%}
+:root{
+--primary:#2563eb;
+--dark:#0f172a;
+--gray:#64748b;
+--bg:#f8fafc;
+--accent:#22c55e;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto;
+background:var(--bg);
+color:var(--dark);
+}
+
+/* HEADER */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 40px;
+background:#fff;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:sticky;top:0;
+}
+
+.logo{font-weight:700;font-size:20px;color:var(--primary)}
+
+.btn{
+background:var(--primary);
+color:#fff;
+padding:10px 18px;
+border-radius:8px;
+text-decoration:none;
+}
+
+/* HERO */
+.hero{
+padding:100px 20px;
+text-align:center;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:#fff;
+}
+
+.hero h1{
+font-size:42px;
+max-width:800px;
+margin:auto;
+line-height:1.2;
+}
+
+.hero p{
+margin:20px 0 30px;
+font-size:18px;
+opacity:0.9;
+}
+
+.cta{
+background:var(--accent);
+padding:14px 28px;
+border-radius:10px;
+color:#fff;
+text-decoration:none;
+font-weight:600;
+}
+
+/* SECTION */
+section{
+max-width:1100px;
+margin:auto;
+padding:70px 20px;
+}
+
+h2{
+font-size:30px;
+margin-bottom:30px;
+text-align:center;
+}
+
+/* GRID */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+/* CARD */
+.card{
+background:#fff;
+padding:25px;
+border-radius:14px;
+box-shadow:0 10px 25px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* PROCESS */
+.step{
+text-align:center;
+}
+
+/* FORM */
+.contact{
+background:#fff;
+padding:40px;
+border-radius:14px;
+max-width:500px;
+margin:auto;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+button{
+background:var(--accent);
+color:#fff;
+padding:14px;
+border:none;
+width:100%;
+border-radius:8px;
+font-weight:600;
+}
+
+/* FOOTER */
+footer{
+background:var(--dark);
+color:#fff;
+text-align:center;
+padding:30px;
+margin-top:40px;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-<div>Google Ads Pro</div>
+<div class="logo">Google Ads Pro</div>
 <a href="#contact" class="btn">Аудит</a>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-<h1>Настройка Google Ads под ключ</h1>
-<p>Приводим клиентов, а не клики</p>
-<a href="#contact" class="btn">Получить аудит</a>
+<h1>Превращаем Google Ads в поток клиентов, а не расходов</h1>
+<p>Настройка, оптимизация и аналитика для бизнеса в Европе</p>
+<a href="#contact" class="cta">Получить аудит</a>
 </div>
 
+<!-- PROBLEMS -->
 <section>
-<h2>Проблемы</h2>
+<h2>С какими проблемами сталкиваются клиенты</h2>
 <div class="grid">
-<div class="card">💸 Слив бюджета</div>
-<div class="card">📉 Нет заявок</div>
-<div class="card">🎯 Нет аналитики</div>
-<div class="card">⏰ Нет времени</div>
+<div class="card">💸 Сливается бюджет без результата</div>
+<div class="card">📉 Нет заявок с рекламы</div>
+<div class="card">🎯 Нет аналитики и понимания</div>
+<div class="card">⏰ Нет времени заниматься рекламой</div>
 </div>
 </section>
 
+<!-- SERVICES -->
 <section>
-<h2>Услуги</h2>
+<h2>Что мы делаем</h2>
 <div class="grid">
-<div class="card">Google Ads</div>
-<div class="card">Оптимизация</div>
-<div class="card">GA4 + GTM</div>
-<div class="card">Лендинг</div>
+<div class="card">🚀 Запуск Google Ads под ключ</div>
+<div class="card">📊 Оптимизация и масштабирование</div>
+<div class="card">📈 Настройка GA4 и GTM</div>
+<div class="card">🎯 Повышение конверсии сайта</div>
 </div>
 </section>
 
+<!-- PROCESS -->
+<section>
+<h2>Как мы работаем</h2>
+<div class="grid">
+<div class="card step">1. Анализ бизнеса</div>
+<div class="card step">2. Стратегия</div>
+<div class="card step">3. Запуск рекламы</div>
+<div class="card step">4. Оптимизация</div>
+</div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
-<h2>Оставить заявку</h2>
+<h2>Получить бесплатный аудит</h2>
 
+<div class="contact">
 <form action="https://formspree.io/f/mayvlzvr" method="POST">
 <input type="text" name="name" placeholder="Имя" required>
 <input type="email" name="email" placeholder="Email" required>
-<textarea name="message"></textarea>
-<button type="submit">Отправить</button>
+<textarea name="message" placeholder="Ваш запрос"></textarea>
+<button type="submit">Отправить заявку</button>
 </form>
+</div>
 
 </section>
+
+<footer>
+© 2026 Google Ads Pro
+</footer>
 
 </body>
 </html>
