@@ -3,14 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Настройка Google Ads</title>
+<title>Google Ads</title>
 
 <style>
-body {font-family: Arial; margin:0; color:#333;}
-header {background:#2563eb; color:#fff; padding:20px; display:flex; justify-content:space-between;}
-.btn {background:#10b981; color:#fff; padding:10px 20px; text-decoration:none;}
-.hero {padding:60px; text-align:center; background:#f3f4f6;}
-section {padding:40px; max-width:1000px; margin:auto;}
-.card {border:1px solid #ddd; padding:20px; margin:10px 0;}
-form {max-width:400px; margin:auto;}
-input, textarea {width:
+body{margin:0;font-family:Arial}
+header{background:#2563eb;color:#fff;padding:15px;display:flex;justify-content:space-between}
+.hero{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;text-align:center;padding:80px}
+.btn{background:#10b981;color:#fff;padding:12px 25px;text-decoration:none;border-radius:6px}
+section{padding:40px;max-width:1000px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#fff;padding:20px;border-radius:10px;box-shadow:0 3px 10px rgba(0,0,0,0.1)}
+form{max-width:400px;margin:auto}
+input,textarea{width:100%;padding:10px;margin:10px 0}
+button{background:#10b981;color:#fff;padding:12px;border:none;width:100%}
+</style>
+</head>
+
+<body>
+
+<header>
+<div>Google Ads Pro</div>
+<a href="#contact" class="btn">Аудит</a>
+</header>
+
+<div class="hero">
+<h1>Настройка Google Ads под ключ</h1>
+<p>Приводим клиентов, а не клики</p>
+<a href="#contact" class="btn">Получить аудит</a>
+</div>
+
+<section>
+<h2>Проблемы</h2>
+<div class="grid">
+<div class="card">💸 Слив бюджета</div>
+<div class="card">📉 Нет заявок</div>
+<div class="card">🎯 Нет аналитики</div>
+<div class="card">⏰ Нет времени</div>
+</div>
+</section>
+
+<section>
+<h2>Услуги</h2>
+<div class="grid">
+<div class="card">Google Ads</div>
+<div class="card">Оптимизация</div>
+<div class="card">GA4 + GTM</div>
+<div class="card">Лендинг</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Оставить заявку</h2>
+
+<form action="https://formspree.io/f/mayvlzvr" method="POST">
+<input type="text" name="name" placeholder="Имя" required>
+<input type="email" name="email" placeholder="Email" required>
+<textarea name="message"></textarea>
+<button type="submit">Отправить</button>
+</form>
+
+</section>
+
+</body>
+</html>
